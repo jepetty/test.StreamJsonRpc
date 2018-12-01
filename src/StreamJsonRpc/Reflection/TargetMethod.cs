@@ -149,7 +149,6 @@ namespace StreamJsonRpc
                     this.AddErrorMessage(string.Format(CultureInfo.CurrentCulture, Resources.MethodParametersNotCompatible, method));
                     return false;
                 case JsonRpcRequest.ArgumentMatchResult.MissingArgument:
-                    this.AddErrorMessage(Resources.RequiredArgumentMissing);
                     return false;
                 default:
                     return false;
